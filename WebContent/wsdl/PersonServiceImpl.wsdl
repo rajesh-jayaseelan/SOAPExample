@@ -267,7 +267,9 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       <wsdl:port binding="impl:PersonServiceImplSoapBinding" name="PersonServiceImpl">
 
-         <wsdlsoap:address location="http://localhost:9090/SOAPExample/services/PersonServiceImpl"/>
+        <!--  <wsdlsoap:address location="http://localhost:9090/SOAPExample/services/PersonServiceImpl"/> -->
+        <!-- access from chrome browser once deployed on tomcat server uri - http://localhost:8080/SOAPExample/services/PersonServiceImpl?wsdl -->
+         <wsdlsoap:address location="http://localhost:8080/SOAPExample/services/PersonServiceImpl"/>
 
       </wsdl:port>
 
