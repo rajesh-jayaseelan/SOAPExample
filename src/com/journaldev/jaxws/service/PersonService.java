@@ -11,4 +11,6 @@ public interface PersonService {
     public Person getPerson(int id);
      
     public Person[] getAllPersons();
+    
+    public Integer checkPersonId(int id);
 }
