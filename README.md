@@ -1,5 +1,5 @@
 # SOAPExample
- SOAP Web Service Example for refs.
+ Simple SOAP Web Service Example for refs.
  
  *********************************************************
  SOAP API Testing - How to run SOAP request in Postman
