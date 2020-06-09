@@ -19,3 +19,10 @@
  
  Step 5: Run and validate using newman i.e from cmdline type 'newman run uri'
  
+ * we can use wsimport tool of jdk i.e
+ wsimport -keep -verbose -s ./src/ -d ./bin/ <WSDL URL> 
+ 
+ ref url - https://www.journaldev.com/9133/jax-ws-web-service-deployment-on-tomcat-server ,
+ https://www.youtube.com/watch?v=fE1pVSiXNkU
+ 
+ 

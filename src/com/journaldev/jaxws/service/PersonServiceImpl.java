@@ -14,7 +14,6 @@ public class PersonServiceImpl implements PersonService {
  
     private static Map<Integer,Person> persons = new HashMap<Integer,Person>();
     
-    @WebMethod
     @Override
     public boolean addPerson(Person p) {
         if(persons.get(p.getId()) != null) return false;
@@ -22,7 +21,6 @@ public class PersonServiceImpl implements PersonService {
         return true;
     }
     
-    @WebMethod
     @Override
     public boolean deletePerson(int id) {
         if(persons.get(id) == null) return false;
@@ -30,13 +28,11 @@ public class PersonServiceImpl implements PersonService {
         return true;
     }
     
-    @WebMethod
     @Override
     public Person getPerson(int id) {
         return persons.get(id);
     }
     
-    @WebMethod
     @Override
     public Person[] getAllPersons() {
         Set<Integer> ids = persons.keySet();
@@ -49,13 +45,4 @@ public class PersonServiceImpl implements PersonService {
         return p;
     }
     
-    @WebMethod
-    @Override
-    public Integer checkPersonId(int id) {
-    	if(persons.get(id)!=null) {
-    		return id;
-    	}
-    	return 0;
-    }
- 
 }
